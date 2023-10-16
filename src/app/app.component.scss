@@ -1,0 +1,14 @@
+.custom{
+    margin-top: 3.5rem;
+}
+
+::ng-deep app-ng-dynamic-breadcrumb ul.custom-bread-crumb {
+    padding: 10px 0px !important;
+    background-color: white !important;
+    li {
+        font-size: 14px !important;
+    }
+    a{
+        color: #fe7171 !important;
+    }
+}

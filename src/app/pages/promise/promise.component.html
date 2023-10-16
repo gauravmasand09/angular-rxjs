@@ -1,0 +1,29 @@
+<div class="my-3">
+    <accordion>
+        <accordion-group heading="Promise vs Observable" [isOpen]="true">
+            <div class="body">
+                <h4>Promise</h4>
+                <ul>
+                    <li>Async</li>
+                    <li>
+                        Returns single value 
+                    - resolve (operation is completed successfully) (YES)
+                    - reject (operation not completed successfully error handling) (No)
+                    </li>
+                </ul>
+            
+                <h4>Observables</h4>
+                <ul>
+                    <li>Async or sync, in order to make observable sync you can use forkJoin or other rxjs operators which ar equite handy</li> 
+                    <li>
+                        return stream of values
+                        "0--------->0--------->"
+                    </li>
+                </ul>
+            </div>
+        </accordion-group>
+      </accordion>
+
+
+      <h4>Error : {{response}}</h4>
+</div>
