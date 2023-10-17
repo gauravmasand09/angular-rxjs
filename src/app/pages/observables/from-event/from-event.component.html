@@ -1,0 +1,39 @@
+<div class="my-3">
+    <h2>From Event</h2>
+    <br>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    Add Video
+                </div>
+                <div class="card-body d-flex">
+                   <input #inputValue [(ngModel)]="searchValue" type="text" class="form-control"> 
+                   <button #addBtn class="btn btn-primary mx-3">Add</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    List
+                </div>
+                <div class="card-body">
+                    <ul id="elContainer1">
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    List
+                </div>
+                <div class="card-body">
+                    <ul id="elContainer2">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
