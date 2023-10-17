@@ -28,6 +28,8 @@ export class FromEventComponent {
       if(this.searchValue){
         this._designSvc.print(this.searchValue,'elContainer1');
         this._designSvc.print(this.searchValue,'elContainer2')
+      } else{
+        alert("Please write some text to input")
       }
     });
 

@@ -4,6 +4,7 @@ import { PromiseComponent } from './pages/promise/promise.component';
 import { ObservablesComponent } from './pages/observables/observables.component';
 import { AllComponent } from './pages/observables/all/all.component';
 import { FromEventComponent } from './pages/observables/from-event/from-event.component';
+import { IntervalComponent } from './pages/observables/interval/interval.component';
 
 const routes: Routes = [
   {
@@ -55,20 +56,20 @@ const routes: Routes = [
           },
         ],
       },},
-    //   { path: 'interval', component: IntervalComponent ,
-    //   data: {
-    //     title: 'Interval',
-    //     breadcrumb: [
-    //       {
-    //         label: 'Observable',
-    //         url: '/observable',
-    //       },
-    //       {
-    //         label: 'Interval',
-    //         url: '',
-    //       },
-    //     ],
-    //   }, },
+      { path: 'interval', component: IntervalComponent ,
+      data: {
+        title: 'Interval',
+        breadcrumb: [
+          {
+            label: 'Observable',
+            url: '/observable/list',
+          },
+          {
+            label: 'Interval',
+            url: '',
+          },
+        ],
+      }, },
     //   { path: 'of-from', component: OfFromComponent , data: {
     //     title: 'Of/From',
     //     breadcrumb: [

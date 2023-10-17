@@ -12,6 +12,7 @@ import { ObservablesComponent } from './pages/observables/observables.component'
 import { AllComponent } from './pages/observables/all/all.component';
 import { FromEventComponent } from './pages/observables/from-event/from-event.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { IntervalComponent } from './pages/observables/interval/interval.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     PromiseComponent,
     ObservablesComponent,
     AllComponent,
-    FromEventComponent
+    FromEventComponent,
+    IntervalComponent
   ],
   imports: [
     BrowserModule,
