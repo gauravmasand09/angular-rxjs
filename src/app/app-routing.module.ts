@@ -7,6 +7,7 @@ import { FromEventComponent } from './pages/observables/from-event/from-event.co
 import { IntervalComponent } from './pages/observables/interval/interval.component';
 import { OfFromComponent } from './pages/observables/of-from/of-from.component';
 import { ToArrayComponent } from './pages/observables/to-array/to-array.component';
+import { CustomComponent } from './pages/observables/custom/custom.component';
 
 const routes: Routes = [
   {
@@ -98,19 +99,19 @@ const routes: Routes = [
           },
         ],
       }},
-    //   { path: 'custom', component: CustomComponent , data: {
-    //     title: 'Custom Observable',
-    //     breadcrumb: [
-    //       {
-    //         label: 'Observable',
-    //         url: '/observable',
-    //       },
-    //       {
-    //         label: 'Custom Observable',
-    //         url: '',
-    //       },
-    //     ],
-    //   }},
+      { path: 'custom', component: CustomComponent , data: {
+        title: 'Custom Observable',
+        breadcrumb: [
+          {
+            label: 'Observable',
+            url: '/observable/list',
+          },
+          {
+            label: 'Custom Observable',
+            url: '',
+          },
+        ],
+      }},
     //   { path: 'map', component: MapComponent , data: {
     //     title: 'Map',
     //     breadcrumb: [

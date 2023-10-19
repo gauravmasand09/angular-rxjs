@@ -7,3 +7,28 @@
 @import "node_modules/ngx-bootstrap/datepicker/bs-datepicker";
 
 @import '~highlight.js/styles/androidstudio.css';
+
+ul.customObs {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    > li{
+        border: 1px solid grey;
+        background: white;
+        border-radius: 5px;
+        padding: 7px 13px;
+        margin-bottom: 10px;
+    }
+}
+
+ul.customObs.error > li{
+    color: red;
+    background-color: rgb(242 162 162 / 16%);;
+    border-color: red;
+}
+
+ul.customObs.complete > li{
+    color: green;
+    background-color: rgb(162 234 162 / 16%);
+    border-color: green;
+}

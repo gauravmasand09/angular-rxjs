@@ -16,6 +16,7 @@ import { IntervalComponent } from './pages/observables/interval/interval.compone
 import { OfFromComponent } from './pages/observables/of-from/of-from.component';
 import { HIGHLIGHT_OPTIONS, HighlightModule } from 'ngx-highlightjs';
 import { ToArrayComponent } from './pages/observables/to-array/to-array.component';
+import { CustomComponent } from './pages/observables/custom/custom.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ToArrayComponent } from './pages/observables/to-array/to-array.componen
     FromEventComponent,
     IntervalComponent,
     OfFromComponent,
-    ToArrayComponent
+    ToArrayComponent,
+    CustomComponent
   ],
   imports: [
     BrowserModule,
