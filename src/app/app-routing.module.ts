@@ -5,6 +5,8 @@ import { ObservablesComponent } from './pages/observables/observables.component'
 import { AllComponent } from './pages/observables/all/all.component';
 import { FromEventComponent } from './pages/observables/from-event/from-event.component';
 import { IntervalComponent } from './pages/observables/interval/interval.component';
+import { OfFromComponent } from './pages/observables/of-from/of-from.component';
+import { ToArrayComponent } from './pages/observables/to-array/to-array.component';
 
 const routes: Routes = [
   {
@@ -70,32 +72,32 @@ const routes: Routes = [
           },
         ],
       }, },
-    //   { path: 'of-from', component: OfFromComponent , data: {
-    //     title: 'Of/From',
-    //     breadcrumb: [
-    //       {
-    //         label: 'Observable',
-    //         url: '/observable',
-    //       },
-    //       {
-    //         label: 'Of/From',
-    //         url: '',
-    //       },
-    //     ],
-    //   }},
-    //   { path: 'to-array', component: ToArrayComponent , data: {
-    //     title: 'To Array',
-    //     breadcrumb: [
-    //       {
-    //         label: 'Observable',
-    //         url: '/observable',
-    //       },
-    //       {
-    //         label: 'To Array',
-    //         url: '',
-    //       },
-    //     ],
-    //   }},
+      { path: 'of-from', component: OfFromComponent , data: {
+        title: 'Of/From',
+        breadcrumb: [
+          {
+            label: 'Observable',
+            url: '/observable/list',
+          },
+          {
+            label: 'Of/From',
+            url: '',
+          },
+        ],
+      }},
+      { path: 'to-array', component: ToArrayComponent , data: {
+        title: 'To Array',
+        breadcrumb: [
+          {
+            label: 'Observable',
+            url: '/observable.list',
+          },
+          {
+            label: 'To Array',
+            url: '',
+          },
+        ],
+      }},
     //   { path: 'custom', component: CustomComponent , data: {
     //     title: 'Custom Observable',
     //     breadcrumb: [

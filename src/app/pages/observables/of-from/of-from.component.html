@@ -1,0 +1,109 @@
+<div class="my-3">
+    <h2>Of/From Operators</h2>
+    <accordion>
+        <accordion-group heading="Of and From Operator" [isOpen]="false">
+            <div class="body">
+                <h4>Of operator </h4>
+                <p> Converts the arguments to an observable sequence. 
+                    Emit variable amount of values in a sequence and then emits a complete notification.
+                     <a target="_blank" href="https://rxjs.dev/api/index/function/of">Learn more</a>
+                </p>
+                <pre><code [highlight]="ofCode"></code></pre>
+                <br>
+                <h4>From operator</h4>
+                <p> Creates an Observable from an Array, an array-like object, a Promise
+                    , an iterable object, or an Observable-like object.
+
+                    <br>
+                    from converts various other objects and data types into Observables. It also converts a Promise, an array-like, or an iterable object into an Observable that emits the items in that promise, array, or iterable. A String, in this context, is treated as an array of characters. Observable-like objects 
+                    (contains a function named with the ES2015 Symbol for Observable) can also be converted through this operator.
+                    <a target="_blank" href="https://rxjs.dev/api/index/function/from">Learn more</a>
+                </p>
+
+                <pre><code [highlight]="fromCode"></code></pre>
+                <br>
+
+            </div>
+        </accordion-group>
+    </accordion>
+    <br>
+    <strong>Of examples</strong>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    OF Example 02
+                </div>
+                <div class="card-body">
+                    <p>of('Gaurav','Abhinav','Shubham','Vaishak')</p>
+                    <ul id="elContainer1">
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    OF (Example 02) passing objects instead of strings.
+                </div>
+                <div class="card-body">
+                    <p>of(&#123; a:'Gaurav',b:'Abhinav',c:'Shubham',d:'Vaishak'&#125;)</p>
+                    <ul >
+                        <li>
+                            <strong>{{obsMsg.a}}</strong>
+                        </li>
+                        <li>
+                            <strong>{{obsMsg.b}}</strong>
+                        </li>
+                        <li>
+                            <strong>{{obsMsg.c}}</strong>
+                        </li>
+                        <li>
+                            <strong>{{obsMsg.d}}</strong>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <strong>From examples</strong>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    From (Array)
+                </div>
+                <div class="card-body">
+                    <p>from(['Gaurav','Abhinav','Shubham','Vaishak'])</p>
+                    <ul id="elContainer2">
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    From (Promise to Observable conversion)
+                </div>
+                <div class="card-body">
+                    <ul id="elContainer3">
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    From (String to Observable)
+                </div>
+                <div class="card-body">
+                    <ul id="elContainer4">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

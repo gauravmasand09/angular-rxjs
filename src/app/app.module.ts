@@ -13,6 +13,9 @@ import { AllComponent } from './pages/observables/all/all.component';
 import { FromEventComponent } from './pages/observables/from-event/from-event.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { IntervalComponent } from './pages/observables/interval/interval.component';
+import { OfFromComponent } from './pages/observables/of-from/of-from.component';
+import { HIGHLIGHT_OPTIONS, HighlightModule } from 'ngx-highlightjs';
+import { ToArrayComponent } from './pages/observables/to-array/to-array.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,9 @@ import { IntervalComponent } from './pages/observables/interval/interval.compone
     ObservablesComponent,
     AllComponent,
     FromEventComponent,
-    IntervalComponent
+    IntervalComponent,
+    OfFromComponent,
+    ToArrayComponent
   ],
   imports: [
     BrowserModule,
@@ -30,11 +35,19 @@ import { IntervalComponent } from './pages/observables/interval/interval.compone
     FormsModule,
     ReactiveFormsModule,
     AppRoutingModule,
+    HighlightModule,
     NgDynamicBreadcrumbModule,
     AccordionModule.forRoot(),
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HIGHLIGHT_OPTIONS,
+      useValue: {
+        fullLibraryLoader: () => import('highlight.js')
+      }
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

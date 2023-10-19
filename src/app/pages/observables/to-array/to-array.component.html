@@ -1,0 +1,65 @@
+<div class="my-3">
+    <h2>ToArray Operator</h2>
+    <accordion>
+        <accordion-group heading="To Array" [isOpen]="false">
+            <div class="body">
+                <h4>Of operator </h4>
+                <p> Collects all source emissions and emits them as an array when the source completes.
+                     <a target="_blank" href="https://rxjs.dev/api/index/function/toArray">Learn more</a>
+                </p>
+                <pre><code [highlight]="toArrayCode"></code></pre>
+                
+
+            </div>
+        </accordion-group>
+    </accordion>
+    <br>
+    <strong>To Array Examples</strong>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    Ex : 01 using Interval
+                </div>
+                <div class="card-body">
+                    <ul id="elContainer1">
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    Ex : 02 using object array
+                </div>
+                <div class="card-body">
+                    <ul id="elContainer2">
+                        <li *ngFor="let user of userList">
+                            <strong>Name: {{user.name}}</strong>
+                            <p>Skill: {{user.skill}}</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    Ex : 03 using of('Gaurav','Abhinav','Shubham','Vaishak') and convert it into toArray
+                </div>
+                <div class="card-body">
+                    <ul id="elContainer2">
+                        <li *ngFor="let friend of friendsList">
+                            <strong>{{friend}}</strong>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
