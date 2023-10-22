@@ -8,6 +8,8 @@ import { IntervalComponent } from './pages/observables/interval/interval.compone
 import { OfFromComponent } from './pages/observables/of-from/of-from.component';
 import { ToArrayComponent } from './pages/observables/to-array/to-array.component';
 import { CustomComponent } from './pages/observables/custom/custom.component';
+import { Angular16Component } from './pages/angular16/angular16.component';
+import { MapComponent } from './pages/observables/map/map.component';
 
 const routes: Routes = [
   {
@@ -18,6 +20,20 @@ const routes: Routes = [
       breadcrumb: [
         {
           label: 'Promise',
+          url: '',
+        },
+      ],
+    },
+  },
+
+  {
+    path: 'angularv16',
+    component: Angular16Component,
+    data: {
+      title: 'Angular v16 features',
+      breadcrumb: [
+        {
+          label: 'Angular v16 features',
           url: '',
         },
       ],
@@ -112,19 +128,19 @@ const routes: Routes = [
           },
         ],
       }},
-    //   { path: 'map', component: MapComponent , data: {
-    //     title: 'Map',
-    //     breadcrumb: [
-    //       {
-    //         label: 'Observable',
-    //         url: '/observable',
-    //       },
-    //       {
-    //         label: 'Map',
-    //         url: '',
-    //       },
-    //     ],
-    //   }},
+      { path: 'map', component: MapComponent , data: {
+        title: 'Map',
+        breadcrumb: [
+          {
+            label: 'Observable',
+            url: '/observable/list',
+          },
+          {
+            label: 'Map',
+            url: '',
+          },
+        ],
+      }},
     //   { path: 'pluck', component: PluckComponent , data: {
     //     title: 'Pluck',
     //     breadcrumb: [

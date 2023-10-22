@@ -1,0 +1,57 @@
+<div class="my-3">
+    <h2>Map Operator</h2>
+    <accordion>
+        <accordion-group heading="What is Map & its advantages" [isOpen]="false">
+            <div class="body">
+                <h4>Map</h4>
+                <p> Map operator using .map() inside pipe is very useful in cases when want to modify the response.
+                    Suppose, you have a list of integers but instead you want integres with multiplication by 10.
+                    you can do like this -> .map(x => x * 10), after this when subscribe is called the resulting output will be : 10,20,30 elContainer1
+                    <br>
+                    Note: <strong>map operator changes data before subscription whereas tap can't change the data before subscribing. </strong>
+                    (<a target="_blank" href="https://rxjs.dev/api/operators/map">Learn more</a>)
+                </p>
+                <pre><code [highlight]="mapCode"></code></pre>
+                <br>
+            </div>
+        </accordion-group>
+    </accordion>
+    <br>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    Ex: 01 Map <br>
+                    Code: <strong>map((resp) => "Video "+(resp+1))</strong>  
+                </div>
+                <div class="card-body">
+                   Message: <div class="badge text-bg-success">{{msg1}}</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    Ex: 02 Map <br>
+                    Code: <strong>map((resp) => ((resp + 1) * 10).toString()),</strong>  
+                </div>
+                <div class="card-body">
+                   Message: <div class="badge text-bg-primary">{{msg2}}</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    Ex: 03 Map <br>
+                    Code: <strong>map(( data ) => "Name -> "+data.name),</strong>  
+                </div>
+                <div class="card-body">
+                    <ul id="elContainer1">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
