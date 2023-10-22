@@ -1,0 +1,50 @@
+<div class="my-3">
+    <h2>Retry, RetryWhen, Scan and Delay</h2>
+    <br>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    Ex: 01 Retry <br> <br>
+                    <button  (click)="fetchDetails()" class="btn btn-primary">
+                        Fetch Details <span *ngIf="fetching" class="spinner-border spinner-border-sm mx-2"></span>
+                    </button>
+                </div>
+                <div class="card-body">
+                    <ng-container *ngIf="person">
+                        <table class="table table-bordered dark">
+                            <thead>
+                                <tr>
+                                   <th>Id</th>
+                                   <td>{{person?.id}}</td>
+                                </tr>
+    
+                                <tr>
+                                    <th>Name</th>
+                                    <td>{{person?.firstName}} {{person?.lastName}}</td>
+                                </tr>
+    
+    
+                                <tr>
+                                    <th>Address</th>
+                                    <td>{{person?.address?.address}}</td>
+                                </tr>
+    
+    
+                                <tr>
+                                    <th>Age</th>
+                                    <td>{{person?.age}}</td>
+                                </tr>
+                                
+    
+                            </thead>
+                        </table>
+                    </ng-container>
+                    Status: <span style="font-weight: bold;" [ngClass]="{'text-success': statusMessage == 'Data Fetched'
+                                    ,'text-danger': statusMessage == 'Problem Fetching Data'
+                }">{{statusMessage}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

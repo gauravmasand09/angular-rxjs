@@ -24,6 +24,8 @@ import { PopoverModule } from 'ngx-bootstrap/popover';
 import { FilterComponent } from './pages/observables/filter/filter.component';
 import { TapComponent } from './pages/observables/tap/tap.component';
 import { TakeComponent } from './pages/observables/take/take.component';
+import { RetryComponent } from './pages/observables/retry/retry.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -42,10 +44,12 @@ import { TakeComponent } from './pages/observables/take/take.component';
     PluckComponent,
     FilterComponent,
     TapComponent,
-    TakeComponent
+    TakeComponent,
+    RetryComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     CommonModule,
     FormsModule,
     ReactiveFormsModule,

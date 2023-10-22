@@ -14,6 +14,7 @@ import { PluckComponent } from './pages/observables/pluck/pluck.component';
 import { FilterComponent } from './pages/observables/filter/filter.component';
 import { TapComponent } from './pages/observables/tap/tap.component';
 import { TakeComponent } from './pages/observables/take/take.component';
+import { RetryComponent } from './pages/observables/retry/retry.component';
 
 const routes: Routes = [
   {
@@ -193,6 +194,19 @@ const routes: Routes = [
           },
           {
             label: 'Take',
+            url: '',
+          },
+        ],
+      }},
+      { path: 'retry', component: RetryComponent , data: {
+        title: 'Retry',
+        breadcrumb: [
+          {
+            label: 'Observables',
+            url: '/observable/list',
+          },
+          {
+            label: 'Retry',
             url: '',
           },
         ],

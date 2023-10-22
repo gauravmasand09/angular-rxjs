@@ -21,10 +21,10 @@
             </li>
             <li>
                 <a [routerLink]="['/observable/pluck']" routerLinkActive="router-link-active" >Pluck
-                <i style="display: flex; 
+                <!-- <i style="display: flex; 
                 position: absolute;
                 top: 46%;
-                left: 60%;" (click)="$event.stopPropagation()" [popover]="'Deprecated in Latest rxjs Version.'" class="fa-solid fa-circle-info"></i>
+                left: 60%;" (click)="$event.stopPropagation()" [popover]="'Deprecated in Latest rxjs Version.'" class="fa-solid fa-circle-info"></i> -->
                 </a>
             </li>
             <li>
@@ -35,6 +35,9 @@
             </li>
             <li>
                 <a [routerLink]="['/observable/take']" routerLinkActive="router-link-active" >Take</a>
+            </li>
+            <li>
+                <a [routerLink]="['/observable/retry']" routerLinkActive="router-link-active" >Retry</a>
             </li>
         </ul>
     </div>
