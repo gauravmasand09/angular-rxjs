@@ -19,6 +19,11 @@ import { ToArrayComponent } from './pages/observables/to-array/to-array.componen
 import { CustomComponent } from './pages/observables/custom/custom.component';
 import { Angular16Component } from './pages/angular16/angular16.component';
 import { MapComponent } from './pages/observables/map/map.component';
+import { PluckComponent } from './pages/observables/pluck/pluck.component';
+import { PopoverModule } from 'ngx-bootstrap/popover';
+import { FilterComponent } from './pages/observables/filter/filter.component';
+import { TapComponent } from './pages/observables/tap/tap.component';
+import { TakeComponent } from './pages/observables/take/take.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +38,11 @@ import { MapComponent } from './pages/observables/map/map.component';
     ToArrayComponent,
     CustomComponent,
     Angular16Component,
-    MapComponent
+    MapComponent,
+    PluckComponent,
+    FilterComponent,
+    TapComponent,
+    TakeComponent
   ],
   imports: [
     BrowserModule,
@@ -44,6 +53,7 @@ import { MapComponent } from './pages/observables/map/map.component';
     HighlightModule,
     NgDynamicBreadcrumbModule,
     AccordionModule.forRoot(),
+    PopoverModule.forRoot(),
     BrowserAnimationsModule
   ],
   providers: [

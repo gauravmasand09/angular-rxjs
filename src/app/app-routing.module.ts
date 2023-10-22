@@ -10,6 +10,10 @@ import { ToArrayComponent } from './pages/observables/to-array/to-array.componen
 import { CustomComponent } from './pages/observables/custom/custom.component';
 import { Angular16Component } from './pages/angular16/angular16.component';
 import { MapComponent } from './pages/observables/map/map.component';
+import { PluckComponent } from './pages/observables/pluck/pluck.component';
+import { FilterComponent } from './pages/observables/filter/filter.component';
+import { TapComponent } from './pages/observables/tap/tap.component';
+import { TakeComponent } from './pages/observables/take/take.component';
 
 const routes: Routes = [
   {
@@ -141,32 +145,58 @@ const routes: Routes = [
           },
         ],
       }},
-    //   { path: 'pluck', component: PluckComponent , data: {
-    //     title: 'Pluck',
-    //     breadcrumb: [
-    //       {
-    //         label: 'Observable',
-    //         url: '/observable',
-    //       },
-    //       {
-    //         label: 'Pluck',
-    //         url: '',
-    //       },
-    //     ],
-    //   }},
-    //   { path: 'filter', component: FilterComponent , data: {
-    //     title: 'Filter',
-    //     breadcrumb: [
-    //       {
-    //         label: 'Observable',
-    //         url: '/observable',
-    //       },
-    //       {
-    //         label: 'Filter',
-    //         url: '',
-    //       },
-    //     ],
-    //   }},
+      { path: 'pluck', component: PluckComponent , data: {
+        title: 'Pluck',
+        breadcrumb: [
+          {
+            label: 'Observable',
+            url: '/observable/list',
+          },
+          {
+            label: 'Pluck',
+            url: '',
+          },
+        ],
+      }},
+      { path: 'filter', component: FilterComponent , data: {
+        title: 'Filter',
+        breadcrumb: [
+          {
+            label: 'Observable',
+            url: '/observable/list',
+          },
+          {
+            label: 'Filter',
+            url: '',
+          },
+        ],
+      }},
+      { path: 'tap', component: TapComponent , data: {
+        title: 'Tap',
+        breadcrumb: [
+          {
+            label: 'Observable',
+            url: '/observable/list',
+          },
+          {
+            label: 'Tap',
+            url: '',
+          },
+        ],
+      }},
+      { path: 'take', component: TakeComponent , data: {
+        title: 'Take',
+        breadcrumb: [
+          {
+            label: 'Observable',
+            url: '/observable/list',
+          },
+          {
+            label: 'Take',
+            url: '',
+          },
+        ],
+      }},
         {
           path: '**',
           redirectTo: 'observable/list'

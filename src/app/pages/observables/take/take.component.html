@@ -1,0 +1,41 @@
+<div class="my-3">
+    <h2>Take, TakeLast and TakeUntil</h2>
+    <accordion>
+        <accordion-group heading="What is Tap & its advantages" [isOpen]="false">
+            <div class="body">
+                <h4>Tap</h4>
+                <p> Used to perform side-effects for notifications from the source observable.
+                    The most common use of tap is actually for debugging. You can place a tap(console.log) anywhere in your observable pipe, 
+                    log out the notifications as they are emitted by the source returned by the previous operation.
+
+                    Note: The best use-case for tap() operator is to perform loggin operations because tap,
+                    will show everything after subscribe unlike map operator. Basically it cant change before subscribe.
+                    (<a target="_blank" href="https://rxjs.dev/api/index/function/tap"> Learn more</a>)
+                </p>
+                <h5>Example</h5>
+                <p>Check a random number before it is handled. Below is an observable that will use a random number between 0 and 1, and emit 'big' or 'small' depending on the size of that number. 
+                    But we wanted to log what the original number was, so we have added a tap(console.log).
+                </p>
+                <!-- <pre><code [highlight]="tapCode"></code></pre> -->
+                <br>
+            </div>
+        </accordion-group>
+    </accordion>
+    <br>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    Ex: 01 Tap <br>
+                    Code: <strong>tap(data => data == 'Drogba' ? obsSub.unsubscribe() : this._appService.print(data,'elContainer1'))</strong>  
+                </div>
+                <div class="card-body">
+                    <ul id="elContainer1">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

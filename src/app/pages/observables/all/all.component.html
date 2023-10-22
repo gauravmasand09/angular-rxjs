@@ -20,10 +20,21 @@
                 <a [routerLink]="['/observable/map']" routerLinkActive="router-link-active" >Map</a>
             </li>
             <li>
-                <a [routerLink]="['/observable/pluck']" routerLinkActive="router-link-active" >Pluck</a>
+                <a [routerLink]="['/observable/pluck']" routerLinkActive="router-link-active" >Pluck
+                <i style="display: flex; 
+                position: absolute;
+                top: 46%;
+                left: 60%;" (click)="$event.stopPropagation()" [popover]="'Deprecated in Latest rxjs Version.'" class="fa-solid fa-circle-info"></i>
+                </a>
             </li>
             <li>
                 <a [routerLink]="['/observable/filter']" routerLinkActive="router-link-active" >Filter</a>
+            </li>
+            <li>
+                <a [routerLink]="['/observable/tap']" routerLinkActive="router-link-active" >Tap</a>
+            </li>
+            <li>
+                <a [routerLink]="['/observable/take']" routerLinkActive="router-link-active" >Take</a>
             </li>
         </ul>
     </div>

@@ -1,0 +1,98 @@
+<div class="my-3">
+    <h2>Filter Operator (Deprecated)</h2>
+    <accordion>
+        <accordion-group heading="What is Filter & its advantages" [isOpen]="false">
+            <div class="body">
+                <h4>Filter</h4>
+                <p> Filter items emitted by the source Observable by only emitting those that satisfy a specified predicate.
+                    (<a target="_blank" href="https://rxjs.dev/api/index/function/filter"> Learn more</a>)
+                </p>
+                <h5>Example</h5>
+                <p>Emit only click events whose target was a DIV element
+                </p>
+                <pre><code [highlight]="pluckCode"></code></pre>
+                <br>
+            </div>
+        </accordion-group>
+    </accordion>
+    <br>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    Ex: 01 Filter (by length) only filter upto 6 characters name <br>
+                    Code: <strong>pluck('name'),</strong>  
+                </div>
+                <div class="card-body">
+                    <table class="table table-bordered table-dark">
+                        <thead >
+                            <tr>
+                              <th>Id</th> 
+                              <th>Name</th>  
+                            </tr>
+                        </thead>
+                        <tbody >
+                            <tr *ngFor="let data of data1">
+                                <td>{{data.id}}</td>
+                                <td>{{data.name}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    Ex: 02 Filter (by gender) only show male <br>
+                    Code: <strong>pluck('name'),</strong>  
+                </div>
+                <div class="card-body">
+                    <table class="table table-bordered table-dark">
+                        <thead >
+                            <tr>
+                              <th>Id</th> 
+                              <th>Name</th>  
+                              <th>Gender</th>  
+                            </tr>
+                        </thead>
+                        <tbody >
+                            <tr *ngFor="let data of data2">
+                                <td>{{data.id}}</td>
+                                <td>{{data.name}}</td>
+                                <td>{{data.gender}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    Ex: 03 Filter (by nth item) <br>
+                    Code: <strong>pluck('name'),</strong>  
+                </div>
+                <div class="card-body">
+                    <table class="table table-bordered table-dark">
+                        <thead >
+                            <tr>
+                              <th>Id</th> 
+                              <th>Name</th>  
+                              <th>Gender</th>  
+                            </tr>
+                        </thead>
+                        <tbody >
+                            <tr *ngFor="let data of data3">
+                                <td>{{data.id}}</td>
+                                <td>{{data.name}}</td>
+                                <td>{{data.gender}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
