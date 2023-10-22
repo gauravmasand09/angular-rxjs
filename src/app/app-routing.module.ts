@@ -15,6 +15,7 @@ import { FilterComponent } from './pages/observables/filter/filter.component';
 import { TapComponent } from './pages/observables/tap/tap.component';
 import { TakeComponent } from './pages/observables/take/take.component';
 import { RetryComponent } from './pages/observables/retry/retry.component';
+import { DebouncetimeComponent } from './pages/observables/debouncetime/debouncetime.component';
 
 const routes: Routes = [
   {
@@ -207,6 +208,19 @@ const routes: Routes = [
           },
           {
             label: 'Retry',
+            url: '',
+          },
+        ],
+      }},
+      { path: 'debounceTime', component: DebouncetimeComponent , data: {
+        title: 'Debounce Time',
+        breadcrumb: [
+          {
+            label: 'Observables',
+            url: '/observable/list',
+          },
+          {
+            label: 'Debounce Time',
             url: '',
           },
         ],

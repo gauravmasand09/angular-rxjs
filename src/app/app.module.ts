@@ -26,6 +26,8 @@ import { TapComponent } from './pages/observables/tap/tap.component';
 import { TakeComponent } from './pages/observables/take/take.component';
 import { RetryComponent } from './pages/observables/retry/retry.component';
 import { HttpClientModule } from '@angular/common/http';
+import { DebouncetimeComponent } from './pages/observables/debouncetime/debouncetime.component';
+import { NgxLoadingModule } from 'ngx-loading';
 
 @NgModule({
   declarations: [
@@ -45,11 +47,13 @@ import { HttpClientModule } from '@angular/common/http';
     FilterComponent,
     TapComponent,
     TakeComponent,
-    RetryComponent
+    RetryComponent,
+    DebouncetimeComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
+    NgxLoadingModule.forRoot({}),
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
