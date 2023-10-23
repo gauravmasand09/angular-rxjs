@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -6,6 +7,8 @@ import { Injectable } from '@angular/core';
 export class AppServiceService {
 
   constructor() { }
+
+  exclusive = new Subject<boolean>();
 
   print(value:string | any,containerId:string){
     let el = document.createElement('li');

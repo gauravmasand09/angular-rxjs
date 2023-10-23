@@ -28,6 +28,7 @@ import { RetryComponent } from './pages/observables/retry/retry.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DebouncetimeComponent } from './pages/observables/debouncetime/debouncetime.component';
 import { NgxLoadingModule } from 'ngx-loading';
+import { SubjectComponent } from './pages/observables/subject/subject.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { NgxLoadingModule } from 'ngx-loading';
     TapComponent,
     TakeComponent,
     RetryComponent,
-    DebouncetimeComponent
+    DebouncetimeComponent,
+    SubjectComponent
   ],
   imports: [
     BrowserModule,

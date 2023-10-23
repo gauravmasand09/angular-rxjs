@@ -16,6 +16,7 @@ import { TapComponent } from './pages/observables/tap/tap.component';
 import { TakeComponent } from './pages/observables/take/take.component';
 import { RetryComponent } from './pages/observables/retry/retry.component';
 import { DebouncetimeComponent } from './pages/observables/debouncetime/debouncetime.component';
+import { SubjectComponent } from './pages/observables/subject/subject.component';
 
 const routes: Routes = [
   {
@@ -221,6 +222,19 @@ const routes: Routes = [
           },
           {
             label: 'Debounce Time',
+            url: '',
+          },
+        ],
+      }},
+      { path: 'subject', component: SubjectComponent , data: {
+        title: 'Subject',
+        breadcrumb: [
+          {
+            label: 'Observables',
+            url: '/observable/list',
+          },
+          {
+            label: 'Subject & Behaviour Subject',
             url: '',
           },
         ],

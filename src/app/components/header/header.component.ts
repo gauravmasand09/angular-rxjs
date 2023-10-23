@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { Observable, switchMap } from 'rxjs';
+import { AppServiceService } from 'src/app/app-service.service';
 
 @Component({
   selector: 'app-header',
@@ -8,7 +10,14 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent {
   isShown!:boolean;
-  constructor(public router:Router) {}
+  exclusive:boolean = false
+  constructor(public router:Router,private _appSvc:AppServiceService) {
+    this._appSvc.exclusive.subscribe(
+      data => {
+        this.exclusive = data;
+      }
+    )
+  }
 
   ngOnInit(): void {
   }
